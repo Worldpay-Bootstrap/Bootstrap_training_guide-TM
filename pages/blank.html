@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dell Bootstrap Training Guide</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Dell Bootstrap Core CSS -->
+    <link href="../bower_components/dell-ui-bootstrap/dell-ui-bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="../dist/css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        /* [ ADDITIONAL CSS Changes - TM ] */
+        /* ------------------------------- */
+
+        body {
+            color: #444444;
+        }
+        .h1, .h2, .h3, h1, h2, h3 {
+            margin: 10px;
+            margin-top: 10px;
+        }
+        .header-brand{
+            border-bottom: 1px solid #e7e7e7 !important;
+        }
+        .sidebar {
+            margin-top: 0;
+        }
+        .page-header {
+            margin: 10px;
+            padding: 0;
+        }
+        .breadcrumb > li:first-child::before {
+            content: none !important;
+            font-family: inherit;
+        }
+        .header-brand { 
+            background-color: #007db8;
+            padding: 5px 10px;
+        }
+        .header-brand h3 {
+            color: #ffffff;
+        } 
+        .header-brand span {
+            color: #ffffff;
+        }
+        .icon-large {
+            font-size: 48px;
+            color: #ffffff;
+        }
+        .right-column {
+            border-left: 1px solid #999999;
+        }
+        .sidebar {
+            position: relative;
+            width: 243px;
+            z-index: 1;
+            margin-top: 0;
+        }
+        .main-body-content {
+            height:100vh;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="ui-training-guide">
+
+        <!-- Navigation -->
+        <nav class="header-brand" role="header" style="margin-bottom: 0">
+            <div class="row">
+                <div class="col-md-12">
+                    <i class="icon-ui-dell icon-large pull-left" aria-hidden="true"></i>
+                    <span class="h3 pull-left"> UI Bootstrap Coding v1.0</span>
+                </div>
+            </div>    
+        </nav>       
+            <!-- /.navbar-header -->
+        <div class="row">
+            <div class="col-md-2">
+                <div class="navbar-default sidebar" role="navigation">
+                    <div class="sidebar-nav navbar-collapse">
+                        <ul class="nav" id="side-menu">
+                            <li>
+                                <a href="index.html" class="active"><i class="glyphicon glyphicon-home"></i> Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="btg-grid.html"><i class="glyphicon glyphicon-th-list"></i> Grid System<!-- <span class="fa arrow"></span> --></a>
+                                    <!-- <ul class="nav nav-second-level ui-sub-nav">
+                                        <li><a href="/#">- Grid Options</a></li>
+                                        <li><a href="/#">- Stack-to-horizontal</a></li>
+                                        <li><a href="/#">- Mobile & Desktop</a></li>
+                                        <li><a href="/#">- Mobile, Tablets, Desktops</a></li>
+                                        <li><a href="/#">- Responsive column resets</a></li>
+                                        <li><a href="/#">- Offsetting columns</a></li>
+                                        <li><a href="/#">- Nesting Columns</a></li>
+                                        <li><a href="/#">- Column Ordering</a></li>
+                                    </ul> -->
+                                
+                            </li>
+                            <li>
+                                <a href="btg-variables.html"><i class="glyphicon glyphicon-screenshot"></i> Variables</a>
+                            </li>
+                            <li>
+                                <a href="/#" class="ui-nav"><i class="glyphicon glyphicon-wrench"></i> UI Elements<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level ui-sub-nav">
+                                    <li>
+                                        <a href="/#">Banners</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#">Buttons</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#"> Icons</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#">Notifications<span class="fa arrow"></span></a>
+                                        <ul class="nav nav-third-level ui-sub-nav">
+                                            <li><a href="/#">- Alerts</a></li>
+                                            <li><a href="/#">- Errors</a></li>
+                                            <li><a href="/#">- Announcements</a></li>
+                                            <li><a href="/#">- Label/Badges</a></li>
+                                        </ul>
+                                    </li>
+                                    <li>
+                                        <a href="/#">Panels and Wells</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#">Typography</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.sidebar-collapse -->
+                </div>
+                <!-- /.navbar-static-side -->
+            </div>
+            <div class="col-md-8 right-column">
+                <div id="<!-- page-wrapper -->" class="variables-parent main-body-content">
+
+        <!-- [  MAIN BODY starts here ] -->
+                    <div class="row">
+                        <div class="col-lg-9">
+                            <h2 class="page-header">Title Here</h2>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="panel panel-default">
+                                        
+                                        <div class="panel-body">
+                                            <h3>Body Title</h3>
+                                            <p>This area is the main body content goes.</p>
+                                        </div>
+        <!-- /.panel-body -->
+                                    </div>
+                                    <!-- /.panel -->
+                                </div>
+                            </div>         
+                        </div>
+                        <!-- /.col-lg-8 -->
+
+        <!-- [ RIGHT Column ] -->
+                        <div class="col-lg-3">
+                            <div id="side-bar-menu" class="side-bar-menu hidden-sx">
+                                    <div class="well affix" id="sidebar-component-parent">
+                                        <h4 class="bottom-offset-0">Title Here</h4>
+                                        <hr class="top-offset-5 bottom-offset-10"/>
+                                        <ul class="list-unstyled sidebar-component nav">
+                                            <li><a class="component-item" href="#grays">Nav One</a></li>
+                                            <li><a class="component-item" href="#accent">Nav Two</a></li>
+                                            <li><a class="component-item" href="#buttons">Nav Three</a></li>
+                                            <li><a class="component-item" href="#alienware">Nav Four</a></li>
+                                            <li><a class="component-item" href="#aside">Nav Five</a></li>
+                                            <li><a class="component-item" href="#typography">Nav Six</a></li>
+                                        </ul>
+                                        <hr />
+                                    </div>
+                                </div>
+                            <!-- /.panel -->
+                            </div>
+                        <!-- /.col-lg-4 -->
+                        </div>
+                    <!-- /.row -->
+                    </div>
+                <!-- /#page-wrapper -->
+                </div>
+            <!-- /#wrapper -->
+            </div>
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <!-- <script src="../bower_components/raphael/raphael-min.js"></script>
+    <script src="../bower_components/morrisjs/morris.min.js"></script>
+    <script src="../js/morris-data.js"></script> -->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>

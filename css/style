@@ -1,0 +1,27 @@
+/* [ ADDITIONAL CSS Changes - TM ] */
+/* ------------------------------- */
+
+body {
+    color: #444444;
+}
+.h1, .h2, .h3, h1, h2, h3 {
+    margin: 10px;
+    margin-top: 10px;
+}
+.header-brand{
+    border-bottom: 1px solid #e7e7e7 !important;
+}
+.sidebar {
+    margin-top: 0;
+}
+.page-header {
+    margin: 10px 0;
+    padding-bottom: 9px;
+}
+.breadcrumb > li:first-child::before {
+    content: none !important;
+    font-family: inherit;
+}
+.side-bar-menu .well {
+    margin: 20px 0 !important;
+}

@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dell Bootstrap Training Guide</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Dell Bootstrap Core CSS -->
+    <link href="../bower_components/dell-ui-bootstrap/dell-ui-bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="../dist/css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        /* [ ADDITIONAL CSS Changes - TM ] */
+        /* ------------------------------- */
+
+        body {
+            color: #444444;
+        }
+        .h1, .h2, .h3, h1, h2, h3 {
+            margin: 10px;
+            margin-top: 10px;
+        }
+        .header-brand{
+            border-bottom: 1px solid #e7e7e7 !important;
+        }
+        .sidebar {
+            margin-top: 0;
+        }
+        .page-header {
+            margin: 10px;
+            padding: 0;
+        }
+        .breadcrumb > li:first-child::before {
+            content: none !important;
+            font-family: inherit;
+        }
+        .header-brand { 
+            background-color: #007db8;
+            padding: 5px 10px;
+        }
+        .header-brand h3 {
+            color: #ffffff;
+        } 
+        .header-brand span {
+            color: #ffffff;
+        }
+        .icon-large {
+            font-size: 48px;
+            color: #ffffff;
+        }
+        .right-column {
+            border-left: 1px solid #999999;
+        }
+        .sidebar {
+            position: relative;
+            width: 243px;
+            z-index: 1;
+            margin-top: 0;
+        }
+        .main-body-content {
+            height:100vh;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="ui-training-guide">
+
+        <!-- Navigation -->
+        <nav class="header-brand" role="header" style="margin-bottom: 0">
+            <div class="row">
+                <div class="col-md-12">
+                    <i class="icon-ui-dell icon-large pull-left" aria-hidden="true"></i>
+                    <span class="h2 pull-left"> UI Bootstrap Coding v1.0</span>
+                    <a href="blank.html" class="pull-right" style="color: white;">Blank Template</a>
+                </div>
+            </div>    
+        </nav>        
+            <!-- /.navbar-header -->
+        <div class="row">
+            <div class="col-md-2">
+                <div class="navbar-default sidebar" role="navigation">
+                    <div class="sidebar-nav navbar-collapse">
+                        <ul class="nav" id="side-menu">
+                            <li>
+                                <a href="index.html" class="active"><i class="glyphicon glyphicon-home"></i> Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="btg-grid.html"><i class="glyphicon glyphicon-th-list"></i> Grid System</a>
+                            </li>
+                            <li>
+                                <a href="btg-variables.html"><i class="glyphicon glyphicon-screenshot"></i> Variables</a>
+                            </li>
+                            <li>
+                                <a href="btg-ui-elements.html" class="<!-- ui-nav -->"><i class="glyphicon glyphicon-wrench"></i> UI Elements<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level ui-sub-nav">
+                                    <li>
+                                        <a href="btg-ui-elements.html#top">Panels and Wells</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#">Buttons</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#">Notifications</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#">Typography</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#"> Icons</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.sidebar-collapse -->
+                </div>
+                <!-- /.navbar-static-side -->
+            </div>
+            <div class="col-md-8 right-column">
+                <div id="<!-- page-wrapper -->" class="main-body-content">
+                    <!-- [  MAIN BODY starts here ] -->
+                    <div class="row">
+                        <div class="col-md-8">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <h4><i class="glyphicon glyphicon-bookmark"></i> Things to know</h4>
+                                </div>
+                                <!-- /.panel-heading -->
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h4>General frame layout of page.</h4>
+                                            <ul>
+                                                <li>Masthead</li>
+                                                <li>Body Content</li>
+                                                <li>Footer</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <h4>Layer structure within the body content is:</h4>
+                                            <ul>
+                                                <li>Section</li>
+                                                <li>Container - There are two types of containers
+                                                    <ul>
+                                                        <li>Container</li>
+                                                        <li>Container-fluid</li>
+                                                    </ul>
+                                                </li>
+                                                <li>Row</li>
+                                                <li>Columns - There are four different size columns.  Here is the order.
+                                                    <ul>
+                                                        <li>xs - extra small (.col-xs-#)</li>
+                                                        <li>sm - small (.col-sm-#)</li>
+                                                        <li>md – medium ( .col-md )</li>
+                                                        <li>lg – large ( .col-lg )</li>
+                                                    </ul>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <hr />
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <ol>
+                                                <li>Rows must be placed within a <i>.container</i> (fixed-width) or <i>.container-fluid</i> (full-width) for proper alignment and padding.</li>
+                                                <li>Use rows to create horizontal groups of columns.</li>
+                                                <li>All rows contain columns and each row contains 12 columns.</li>
+                                                <li>Content should be placed within columns, and only columns may be immediate children of rows.</li>
+                                            </ol>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+                            <div class="panel panel-default" style="display: none;">
+                                <div class="panel-heading">
+                                    <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
+                                </div>
+                                <!-- /.panel-heading -->
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+
+                                        </div>
+                                        <!-- /.col-lg-4 (nested) -->
+                                        <div class="col-lg-8">
+                                            <div id="morris-bar-chart"></div>
+                                        </div>
+                                        <!-- /.col-lg-8 (nested) -->
+                                    </div>
+                                    <!-- /.row -->
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+                            <div class="panel panel-default" style="display: none;">
+                                <div class="panel-heading">
+                                    <i class="fa fa-clock-o fa-fw"></i> Responsive
+                                </div>
+                                <!-- /.panel-heading -->
+                                <div class="panel-body">
+
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+                        </div>
+                        <!-- /.col-lg-8 -->
+
+                        <!-- [ RIGHT Column ] -->
+                        <div class="col-md-4">
+                            <div class="panel panel-default">
+                                <div class="panel-heading">
+                                    <i class="glyphicon glyphicon-pencil"></i> Sample Code
+                                </div>
+                                <!-- /.panel-heading -->
+                                <div class="panel-body">
+
+                                    &lt;section&gt;<br />
+                                    &nbsp;&nbsp; &lt;div class="container"&gt;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="row"&gt;<br />
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="col-md-9"&gt; &lt;/div&gt;<br />  <!-- left column -->
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class="col-md-3"&gt; &lt;/div&gt;<br />  <!-- right column -->
+                                    &nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br />
+                                    &nbsp;&nbsp; &lt;/div&gt;<br />
+                                    &lt;/section&gt;
+
+                                    
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+                            <div class="panel panel-default" style="display: none;">
+                                <div class="panel-heading">
+                                    <i class="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
+                                </div>
+                                <div class="panel-body">
+                                    <div id="morris-donut-chart"></div>
+                                    <a href="#" class="btn btn-default btn-block">View Details</a>
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+                            
+                        </div>
+                        <!-- /.col-lg-4 -->
+                    </div>
+                    <!-- /.row -->
+                </div>
+                <!-- /#page-wrapper -->
+            </div>
+        </div>
+
+
+
+        
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <!-- <script src="../bower_components/raphael/raphael-min.js"></script>
+    <script src="../bower_components/morrisjs/morris.min.js"></script>
+    <script src="../js/morris-data.js"></script> -->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Dell Bootstrap Training Guide</title>
+
+    <!-- Bootstrap Core CSS -->
+    <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Dell Bootstrap Core CSS -->
+    <link href="../bower_components/dell-ui-bootstrap/dell-ui-bootstrap.min.css" rel="stylesheet">
+
+    <!-- MetisMenu CSS -->
+    <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+
+    <!-- Timeline CSS -->
+    <link href="../dist/css/timeline.css" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+
+    <!-- Custom Fonts -->
+    <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+
+    <link href="../css/style.css" rel="stylesheet">
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <style type="text/css">
+        /* [ ADDITIONAL CSS Changes - TM ] */
+        /* ------------------------------- */
+
+        body {
+            color: #444444;
+        }
+        .h1, .h2, .h3, h1, h2, h3 {
+            margin: 10px;
+            margin-top: 10px;
+        }
+        .header-brand{
+            border-bottom: 1px solid #e7e7e7 !important;
+        }
+        .sidebar {
+            margin-top: 0;
+        }
+        .page-header {
+            margin: 10px;
+            padding: 0;
+        }
+        .breadcrumb > li:first-child::before {
+            content: none !important;
+            font-family: inherit;
+        }
+        .header-brand { 
+            background-color: #007db8;
+            padding: 5px 10px;
+        }
+        .header-brand h3 {
+            color: #ffffff;
+        } 
+        .header-brand span {
+            color: #ffffff;
+        }
+        .icon-large {
+            font-size: 48px;
+            color: #ffffff;
+        }
+        .right-column {
+            border-left: 1px solid #999999;
+        }
+        .sidebar {
+            position: relative;
+            width: 243px;
+            z-index: 1;
+            margin-top: 0;
+        }
+        .main-body-content {
+            height:100vh;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="wrapper" class="ui-training-guide">
+
+        <!-- Navigation -->
+        <nav class="header-brand" role="header" style="margin-bottom: 0">
+            <div class="row">
+                <div class="col-md-12">
+                    <i class="icon-ui-dell icon-large pull-left" aria-hidden="true"></i>
+                    <span class="h2 pull-left"> UI Bootstrap Coding v1.0</span>
+                    <a href="blank.html" class="pull-right" style="color: white;">Blank Template</a>
+                </div>
+            </div>    
+        </nav>        
+            <!-- /.navbar-header -->
+        <div class="row">
+            <div class="col-md-2">
+                <div class="navbar-default sidebar" role="navigation">
+                    <div class="sidebar-nav navbar-collapse">
+                        <ul class="nav" id="side-menu">
+                            <li>
+                                <a href="index.html" class="active"><i class="glyphicon glyphicon-home"></i> Dashboard</a>
+                            </li>
+                            <li>
+                                <a href="btg-grid.html"><i class="glyphicon glyphicon-th-list"></i> Grid System</a>
+                            </li>
+                            <li>
+                                <a href="btg-variables.html"><i class="glyphicon glyphicon-screenshot"></i> Variables</a>
+                            </li>
+                            <li>
+                                <a href="/#" class="ui-nav"><i class="glyphicon glyphicon-wrench"></i> UI Elements<span class="fa arrow"></span></a>
+                                <ul class="nav nav-second-level ui-sub-nav">
+                                    <li>
+                                        <a href="/#">Panels and Wells</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#">Buttons</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#">Notifications</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#">Typography</a>
+                                    </li>
+                                    <li>
+                                        <a href="/#"> Icons</a>
+                                    </li>
+                                </ul>
+                                <!-- /.nav-second-level -->
+                            </li>
+                        </ul>
+                    </div>
+                    <!-- /.sidebar-collapse -->
+                </div>
+                <!-- /.navbar-static-side -->
+            </div>
+            <div class="col-md-8 right-column">
+
+        <div id="<!-- page-wrapper -->" class="variables-parent main-body-content">
+
+<!-- [  MAIN BODY starts here ] -->
+            <div class="row">
+                <div class="col-lg-9">
+                    <h1 class="page-header">Variables</h1>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="panel panel-default">
+                                
+                                <div class="panel-body">
+                                <h3>Dell-UI Custom Variables and Alienware Custom Variables</h3>
+
+                                    <hr id="grays" />
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h5 class="text-blue">Grays</h5>
+                                        </div>
+                                        <div class="col-md-2"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-gray-dark</div>
+                                        <div class="col-md-1">#444444</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 gray-dark color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-gray</div>
+                                        <div class="col-md-1">#aaaaaa</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 gray color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-gray-light</div>
+                                        <div class="col-md-1">#eeeeee</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 gray-light color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-gray-very-light</div>
+                                        <div class="col-md-1">#f9f9f9</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 gray-very-light color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-gray-medium</div>
+                                        <div class="col-md-1">#737373</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 gray-medium color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-gray-hover</div>
+                                        <div class="col-md-1">#f3f3f3</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 color-block" style="background-color: #f3f3f3;"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@black</div>
+                                        <div class="col-md-1">#000000</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 black color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@white</div>
+                                        <div class="col-md-1">#ffffff</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 white color-block" style="border: 1px solid #d9d9d9"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <hr id="accent" />
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h5 class="text-blue">Accent Colors</h5>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <h5 class="text-blue"><i class="glyphicon glyphicon-arrow-up" aria-hidden="true"></i> <a href="#top">Top</a></h5>
+                                        </div>
+                                    </div>
+
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-blue</div>
+                                        <div class="col-md-1">#007db8</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 well-blue color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-blue-hover</div>
+                                        <div class="col-md-1">#006dab</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 color-block" style="background-color: #006dab"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-dark-blue</div>
+                                        <div class="col-md-1">#00447c</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 well-dark-blue color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-green</div>
+                                        <div class="col-md-1">#6ea204</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 well-green color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-green-hover</div>
+                                        <div class="col-md-1">#5d9303</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 color-block" style="background-color: #5d9303"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-green-light</div>
+                                        <div class="col-md-1">#c1d82f</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 well-light-green color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-yellow</div>
+                                        <div class="col-md-1">#f2af00</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 well-yellow color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-orange</div>
+                                        <div class="col-md-1">#ee6411</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 well-orange color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-red</div>
+                                        <div class="col-md-1">#d74324</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 well-red color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-red-dark</div>
+                                        <div class="col-md-1">#ce1126</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 well-red-dark color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-berry</div>
+                                        <div class="col-md-1">#b7295a</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 well-berry color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-purple</div>
+                                        <div class="col-md-1">#6e2585</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 well-purple color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-teal</div>
+                                        <div class="col-md-1">#42aeaf</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 well-teal color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-alert-yellow</div>
+                                        <div class="col-md-1">#ffffc9</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 color-block" style="background-color: #ffffc9"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-highlight-blue</div>
+                                        <div class="col-md-1">#cce5f1</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 color-block" style="background-color: #cce5f1"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <hr id="buttons" />
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h5 class="text-blue">Buttons Colors</h5>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <h5 class="text-blue"><i class="glyphicon glyphicon-arrow-up" aria-hidden="true"></i> <a href="#top">Top</a></h5>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-primary-blue</div>
+                                        <div class="col-md-1">#007db8</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 well-blue color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-primary-blue-hover</div>
+                                        <div class="col-md-1">#00447c</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 color-block" style="background-color: #00447c;"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-success-green</div>
+                                        <div class="col-md-1">#408001</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 well-green color-block"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-success-green-hover</div>
+                                        <div class="col-md-1">#285709</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 color-block" style="background-color: #285709;"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-default-gray</div>
+                                        <div class="col-md-1">#EEEEEE</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 color-block" style="background-color: #EEEEEE;"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-default-gray-hover</div>
+                                        <div class="col-md-1">#dadada</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 color-block" style="background-color: #dadada;"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@dell-default-gray-dark-hover</div>
+                                        <div class="col-md-1">#333333</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 color-block" style="background-color: #333333;"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <hr id="alienware" />
+                                    <div class="row">
+                                        <div class="col-md-10">
+                                            <h5 class="text-blue">Alienware Colors</h5>
+                                        </div>
+                                        <div class="col-md-2">
+                                            <h5 class="text-blue"><i class="glyphicon glyphicon-arrow-up" aria-hidden="true"></i> <a href="#top">Top</a></h5>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@alien-background</div>
+                                        <div class="col-md-1">#010101</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 color-block" style="background-color: #010101;"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@alien-light-background</div>
+                                        <div class="col-md-1">#333333</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 color-block" style="background-color: #333333;"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-4">@alien-stroke-dark</div>
+                                        <div class="col-md-1">#28231b</div>
+                                        <div class="col-md-1"></div>
+                                        <div class="col-md-2 color-block" style="background-color: #28231b;"></div>
+                                        <div class="col-md-4"></div>
+                                    </div>
+
+
+
+
+                                    
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+                            <div class="panel panel-default" style="display: none;">
+                                <div class="panel-heading">
+                                    <i class="fa fa-bar-chart-o fa-fw"></i> Bar Chart Example
+                                </div>
+                                <!-- /.panel-heading -->
+                                <div class="panel-body">
+                                    <div class="row">
+                                        <div class="col-lg-4">
+
+                                        </div>
+                                        <!-- /.col-lg-4 (nested) -->
+                                        <div class="col-lg-8">
+                                            <div id="morris-bar-chart"></div>
+                                        </div>
+                                        <!-- /.col-lg-8 (nested) -->
+                                    </div>
+                                    <!-- /.row -->
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+                            <div class="panel panel-default" style="display: none;">
+                                <div class="panel-heading">
+                                    <i class="fa fa-clock-o fa-fw"></i> Responsive
+                                </div>
+                                <!-- /.panel-heading -->
+                                <div class="panel-body">
+                                    
+                                </div>
+                                <!-- /.panel-body -->
+                            </div>
+                            <!-- /.panel -->
+                        </div>
+                    </div>         
+                </div>
+                <!-- /.col-lg-8 -->
+
+<!-- [ RIGHT Column ] -->
+                <div class="col-lg-3">
+                    <div id="side-bar-menu" class="side-bar-menu hidden-sx">
+                            <div class="well affix" id="sidebar-component-parent">
+                                <h4 class="bottom-offset-0">Variables</h4>
+                                <hr class="top-offset-5 bottom-offset-10"/>
+                                <ul class="list-unstyled sidebar-component nav">
+                                    <li><a class="component-item" href="#grays">Grays</a></li>
+                                    <li><a class="component-item" href="#accent">Accent Colors</a></li>
+                                    <li><a class="component-item" href="#buttons">Button Colors</a></li>
+                                    <li><a class="component-item" href="#alienware">Alienware Colors</a></li>
+                                    <li><a class="component-item" href="#aside">Custon Aside Colors</a></li>
+                                    <li><a class="component-item" href="#typography">Typography</a></li>
+                                </ul>
+                                <hr />
+                            </div>
+                        </div>
+                    <!-- /.panel -->
+                    <div class="panel panel-default" style="display: none;">
+                        <div class="panel-heading">
+                            <i class="fa fa-bar-chart-o fa-fw"></i> Donut Chart Example
+                        </div>
+                        <div class="panel-body">
+                            <div id="morris-donut-chart"></div>
+                            <a href="#" class="btn btn-default btn-block">View Details</a>
+                        </div>
+                        <!-- /.panel-body -->
+                    </div>
+                    <!-- /.panel -->
+                    
+                </div>
+                <!-- /.col-lg-4 -->
+            </div>
+            <!-- /.row -->
+        </div>
+        <!-- /#page-wrapper -->
+
+    </div>
+    <!-- /#wrapper -->
+
+    <!-- jQuery -->
+    <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+    <script src="../bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+
+    <!-- Metis Menu Plugin JavaScript -->
+    <script src="../bower_components/metisMenu/dist/metisMenu.min.js"></script>
+
+    <!-- Morris Charts JavaScript -->
+    <!-- <script src="../bower_components/raphael/raphael-min.js"></script>
+    <script src="../bower_components/morrisjs/morris.min.js"></script>
+    <script src="../js/morris-data.js"></script> -->
+
+    <!-- Custom Theme JavaScript -->
+    <script src="../dist/js/sb-admin-2.js"></script>
+
+</body>
+
+</html>
